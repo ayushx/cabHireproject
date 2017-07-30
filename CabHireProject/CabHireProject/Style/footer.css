@@ -1,0 +1,34 @@
+﻿.copyrights{
+margin-top:25px;
+}
+
+footer.container-fluid.text-center.foot {
+    background: #283039;
+}
+
+.dark-line{
+border-top: 1px solid #525252;
+}
+
+.white-txt{
+color: #FFF;
+}
+
+
+a.link {
+    color:whitesmoke;
+    border: 1px whitesmoke solid;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.link:hover {
+background:whitesmoke;
+    color: #383838;
+}
+
+.footimg{
+width: 14rem;
+align-items:center;
+font-family:Arapey;
+}

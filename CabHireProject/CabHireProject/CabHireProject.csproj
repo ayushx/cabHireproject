@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3474462A-94A2-4565-8991-EE582E01F80A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CabHireProject</RootNamespace>
+    <AssemblyName>CabHireProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdditionalScript\DashbordUser.js" />
+    <Content Include="chechpages\reSignUpPage.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\1info.jpg" />
+    <Content Include="Images\2info.jpg" />
+    <Content Include="Images\3info.jpg" />
+    <Content Include="Images\alltime.png" />
+    <Content Include="Images\bodypage2.jpg" />
+    <Content Include="Images\footer.jpg" />
+    <Content Include="Images\header image.jpg" />
+    <Content Include="icon.png" />
+    <Content Include="Images\indexbkgrd.jpg" />
+    <Content Include="Images\index_Driver1.png" />
+    <Content Include="Images\index_Driver2.png" />
+    <Content Include="Images\index_Driver3.png" />
+    <Content Include="Images\index_Driver4.png" />
+    <Content Include="Images\loginpage.jpg" />
+    <Content Include="Images\logo_footer.png" />
+    <Content Include="Images\relib.png" />
+    <Content Include="Images\secur.png" />
+    <Content Include="Images\slider1.jpg" />
+    <Content Include="Images\slider2.jpg" />
+    <Content Include="Images\slider3.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\Arapey-Regular.ttf" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Pages\AADesignRegister.aspx" />
+    <Content Include="Pages\DashbordAdmin.aspx" />
+    <Content Include="Pages\DashbordAdminManageCabs.aspx" />
+    <Content Include="Pages\DashbordAdminViewDB.aspx" />
+    <Content Include="Pages\DashbordDriver.aspx" />
+    <Content Include="Pages\DashbordDriverCancelTrip.aspx" />
+    <Content Include="Pages\DashbordDriverMyCabTrips.aspx" />
+    <Content Include="Pages\DashbordUser.aspx" />
+    <Content Include="Pages\DashbordUserCabCancel.aspx" />
+    <Content Include="Pages\DashbordUserCabMyTrips.aspx" />
+    <Content Include="Pages\LogOut.aspx" />
+    <Content Include="Pages\Logout_Error.aspx" />
+    <Content Include="Pages\SignUpCompleated_Driver.aspx" />
+    <Content Include="Pages\SignUpPageDriver.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Pages\Index.aspx" />
+    <Content Include="Pages\SignUpCompleated.aspx" />
+    <Content Include="Pages\SignUpPage.aspx" />
+    <Content Include="Style\DashbordUser.css" />
+    <Content Include="Style\footer.css" />
+    <Content Include="Style\IndexPage_Slider.css" />
+    <Content Include="Style\TextSlider_Index.css" />
+    <Content Include="Style\Trasnparent_btn.css" />
+    <Content Include="Uber-web-ajjpp.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chechpages\reSignUpPage.aspx.cs">
+      <DependentUpon>reSignUpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chechpages\reSignUpPage.aspx.designer.cs">
+      <DependentUpon>reSignUpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IsAdminOrUser.cs" />
+    <Compile Include="Pages\AADesignRegister.aspx.cs">
+      <DependentUpon>AADesignRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AADesignRegister.aspx.designer.cs">
+      <DependentUpon>AADesignRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordAdmin.aspx.cs">
+      <DependentUpon>DashbordAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordAdmin.aspx.designer.cs">
+      <DependentUpon>DashbordAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordAdminManageCabs.aspx.cs">
+      <DependentUpon>DashbordAdminManageCabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordAdminManageCabs.aspx.designer.cs">
+      <DependentUpon>DashbordAdminManageCabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordAdminViewDB.aspx.cs">
+      <DependentUpon>DashbordAdminViewDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordAdminViewDB.aspx.designer.cs">
+      <DependentUpon>DashbordAdminViewDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordDriver.aspx.cs">
+      <DependentUpon>DashbordDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordDriver.aspx.designer.cs">
+      <DependentUpon>DashbordDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordDriverCancelTrip.aspx.cs">
+      <DependentUpon>DashbordDriverCancelTrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordDriverCancelTrip.aspx.designer.cs">
+      <DependentUpon>DashbordDriverCancelTrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordDriverMyCabTrips.aspx.cs">
+      <DependentUpon>DashbordDriverMyCabTrips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordDriverMyCabTrips.aspx.designer.cs">
+      <DependentUpon>DashbordDriverMyCabTrips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordUser.aspx.cs">
+      <DependentUpon>DashbordUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordUser.aspx.designer.cs">
+      <DependentUpon>DashbordUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordUserCabCancel.aspx.cs">
+      <DependentUpon>DashbordUserCabCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordUserCabCancel.aspx.designer.cs">
+      <DependentUpon>DashbordUserCabCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DashbordUserCabMyTrips.aspx.cs">
+      <DependentUpon>DashbordUserCabMyTrips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DashbordUserCabMyTrips.aspx.designer.cs">
+      <DependentUpon>DashbordUserCabMyTrips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logout_Error.aspx.cs">
+      <DependentUpon>Logout_Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logout_Error.aspx.designer.cs">
+      <DependentUpon>Logout_Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignUpCompleated.aspx.cs">
+      <DependentUpon>SignUpCompleated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignUpCompleated.aspx.designer.cs">
+      <DependentUpon>SignUpCompleated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignUpCompleated_Driver.aspx.cs">
+      <DependentUpon>SignUpCompleated_Driver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignUpCompleated_Driver.aspx.designer.cs">
+      <DependentUpon>SignUpCompleated_Driver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignUpPage.aspx.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignUpPage.aspx.designer.cs">
+      <DependentUpon>SignUpPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignUpPageDriver.aspx.cs">
+      <DependentUpon>SignUpPageDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignUpPageDriver.aspx.designer.cs">
+      <DependentUpon>SignUpPageDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouteCharges.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60296</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60296/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
