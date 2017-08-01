@@ -35,7 +35,7 @@ namespace CabHireProject.Pages
         {
             string CN = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             SqlConnection con = new SqlConnection(CN);
-            SqlCommand cmd = new SqlCommand("select * from CabDatabase_Admin_AuditTable", con);
+            SqlCommand cmd = new SqlCommand("select * from CabDatabase_Admin_AuditTable ORDER BY SerialNo DESC", con);
             con.Open();
             cmd.ExecuteNonQuery();
 
@@ -128,7 +128,7 @@ namespace CabHireProject.Pages
             }
             else if (result == "" || result == " " || result == null)
             {
-                Label2.Text = "NO SUCH CAAB FOUND ON DATABASE";
+                Label2.Text = "NO SUCH CAB FOUND ON DATABASE";
                 con.Close();
             }
         }

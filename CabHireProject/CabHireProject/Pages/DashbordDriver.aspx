@@ -44,7 +44,7 @@
                                 <li class="active_user"><a href="DashbordDriver.aspx">Home</a></li>
                                 <li><a href="DashbordDriverMyCabTrips.aspx">My Trips</a></li>
                                 <li><a href="DashbordDriverCancelTrip.aspx">Cancel Cab</a></li>
-                                <li><a href="#">Logout</a></li>
+                                <li><a href="LogOut.aspx">Logout</a></li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -132,19 +132,39 @@
                                 <div class="form-group col-md-6">
                                     <label for="country">Source</label>
                                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control">
-                                        <asp:ListItem Value="-1">Source</asp:ListItem>
-                                        <asp:ListItem Value="Sector15">Sector15</asp:ListItem>
-                                        <asp:ListItem Value="Sector16">Sector16</asp:ListItem>
-                                        <asp:ListItem Value="Sector18">Sector18</asp:ListItem>
+                                    <asp:ListItem Value="-1">Your Location</asp:ListItem>
+                                    <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
+                                    <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                    <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
+                                    <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
+                                    <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>
+                                    <asp:ListItem Value="Vaishali">Vaishali</asp:ListItem>
+                                    <asp:ListItem Value="Sector18">Sector18</asp:ListItem>
+                                    <asp:ListItem Value="BotnicalGarden">BotnicalGarden</asp:ListItem>
+                                    <asp:ListItem Value="NoidaCityCenter">NoidaCityCenter</asp:ListItem>
+                                    <asp:ListItem Value="YamunaBank">YamunaBank</asp:ListItem>
+                                    <asp:ListItem Value="Airport">Airport</asp:ListItem>
+                                    <asp:ListItem Value="Rithala">Rithala</asp:ListItem>
+                                    <asp:ListItem Value="Okhla">Okhla</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="country">Destinaton</label>
                                     <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control">
-                                        <asp:ListItem Value="-1">Destinaton</asp:ListItem>
-                                        <asp:ListItem Value="Sector15">Sector15</asp:ListItem>
-                                        <asp:ListItem Value="Sector16">Sector16</asp:ListItem>
-                                        <asp:ListItem Value="Sector18">Sector18</asp:ListItem>
+                                    <asp:ListItem Value="-1">Your Location</asp:ListItem>
+                                    <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
+                                    <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                    <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
+                                    <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
+                                    <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>
+                                    <asp:ListItem Value="Vaishali">Vaishali</asp:ListItem>
+                                    <asp:ListItem Value="Sector18">Sector18</asp:ListItem>
+                                    <asp:ListItem Value="BotnicalGarden">BotnicalGarden</asp:ListItem>
+                                    <asp:ListItem Value="NoidaCityCenter">NoidaCityCenter</asp:ListItem>
+                                    <asp:ListItem Value="YamunaBank">YamunaBank</asp:ListItem>
+                                    <asp:ListItem Value="Airport">Airport</asp:ListItem>
+                                    <asp:ListItem Value="Rithala">Rithala</asp:ListItem>
+                                    <asp:ListItem Value="Okhla">Okhla</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
 

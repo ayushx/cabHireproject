@@ -41,7 +41,7 @@
                         <div class="navbar-collapse collapse">
 
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="DashbordDriver.aspx">HLogOut.aspxome</a></li>
+                                <li><a href="DashbordDriver.aspx">Home</a></li>
                                 <li><a href="DashbordDriverMyCabTrips.aspx">My Trips</a></li>
                                 <li class="active_user"><a href="DashbordDriverCancelTrip.aspx">Cancel Cab</a></li>
                                 <li><a href="LogOut.aspx">Logout</a></li>

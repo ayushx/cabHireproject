@@ -14,7 +14,7 @@ namespace CabHireProject.Pages
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Session["UserDBname"] as string))
+            if (string.IsNullOrEmpty(Session["DriverUserName"] as string))
             {
                 Response.Redirect("~/Pages/Logout_Error.aspx");
             }

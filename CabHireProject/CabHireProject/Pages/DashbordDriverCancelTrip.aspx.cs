@@ -14,7 +14,7 @@ namespace CabHireProject.Pages
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Session["UserDBname"] as string))
+            if (string.IsNullOrEmpty(Session["DriverUserName"] as string))
             {
                 Response.Redirect("~/Pages/Logout_Error.aspx");
             }
@@ -56,6 +56,17 @@ namespace CabHireProject.Pages
             if (result == "0")
             {
                 Label1.Text = "YOUR CAR IS REMOVED FROM DATABASE";
+
+                string UserCabNo1 = Session["DriverCabNo"].ToString();
+
+                string CN1 = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                SqlConnection con1 = new SqlConnection(CN1);
+                SqlCommand cmd1 = new SqlCommand("select DriverName ,CabNum ,Starting,Destin from CabDatabase_Admin where CabNum = '" + UserCabNo1 + "'", con1);
+
+                con1.Open();
+                GridView1.DataSource = cmd1.ExecuteReader();
+                GridView1.DataBind();
+                con1.Close();
             }
             else
             {

@@ -13,7 +13,7 @@ namespace CabHireProject.Pages
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Session["UserDBname"] as string))
+            if (string.IsNullOrEmpty(Session["DriverUserName"] as string))
             {
                 Response.Redirect("~/Pages/Logout_Error.aspx");
             }
@@ -24,7 +24,7 @@ namespace CabHireProject.Pages
 
             string CN = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             SqlConnection con = new SqlConnection(CN);
-            SqlCommand cmd = new SqlCommand("select CabNum,Starting,Destin,UpdatedOn,ActionPerf from CabDatabase_Admin_AuditTable where CabNum = '" + DriverCabNo+"'", con);
+            SqlCommand cmd = new SqlCommand("select SerialNo,CabNum,Starting,Destin,UpdatedOn,ActionPerf from CabDatabase_Admin_AuditTable where CabNum = '" + DriverCabNo+ "' ORDER BY SerialNo DESC ", con);
             con.Open();
             GridView1.DataSource = cmd.ExecuteReader();
             GridView1.DataBind();

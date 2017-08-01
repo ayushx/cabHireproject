@@ -40,7 +40,7 @@
         <div class="col-md-4 col-md-offset-4 text-center" style=" margin-top:170px;">
             <h2 style="font-family:Dosis; color:lightyellow; letter-spacing:10px; font-weight:bolder; font-size:60px;">Login</h2><br />
         <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Placeholder="UserName or EmailID"></asp:TextBox><br />
-        <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Placeholder="Password"></asp:TextBox><br />
+        <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Placeholder="Password" type="password"  ></asp:TextBox><br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" CssClass="btn btn-success cntr btn-outline" Width="250px" /><br />
             <p><br /><br /><hr /><span style="color:lightyellow;">New to Eiel, Register </span><a href="SignUpPageDriver.aspx">Here</a></p>
         <asp:Label ID="Label4" runat="server" Text="" ForeColor="#ff6666" Font-Size="18px"></asp:Label>

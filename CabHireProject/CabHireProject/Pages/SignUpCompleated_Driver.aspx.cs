@@ -78,7 +78,7 @@ namespace CabHireProject.Pages
                 string forsessonCabNo = outPutParameter1.Value.ToString();
                 string forsessonUserName = outPutParameter2.Value.ToString();
                 string forsessonEmailId = outPutParameter3.Value.ToString();
-                string forsessonCarType = outPutParameter3.Value.ToString();
+                string forsessonCarType = outPutParameter4.Value.ToString();
 
                 Session["DriverCabNo"] = forsessonCabNo;
                 Session["DriverUserName"] = forsessonUserName;

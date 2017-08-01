@@ -345,7 +345,7 @@
                 <div class="col-md-8 col-md-offset-2" id="buttn" style="padding-top:500px;">
                    <div class="col-md-6">
                        <asp:Button ID="Button1" runat="server" OnClick="login_Click" Text="LOGIN USER" Width="200px" CssClass="btn btn-warning btn-outline cntr" />
-                   </div>
+                   &nbsp;</div>
                     <div class="col-md-6">
                         <asp:Button ID="Button2" runat="server" OnClick="LoginDriver_Click" Text="LOGIN DRIVER" Width="200px" CssClass="btn btn-info btn-outline cntr" />
                    </div>

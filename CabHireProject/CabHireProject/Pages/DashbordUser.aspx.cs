@@ -44,7 +44,7 @@ namespace CabHireProject.Pages
             toHideAfteCompleatBooking.Visible = true;
             RouteCharges cost = new RouteCharges();
             int costofbooking =  cost.routecost(DropDownList1.SelectedItem.Value, DropDownList2.SelectedItem.Value);
-            Label1.Text = "Your fare for traveling will be " +costofbooking.ToString();
+            Label1.Text = "Your fare for traveling will be " +costofbooking.ToString()+ "₹";
 
             string CN = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
             SqlConnection con = new SqlConnection(CN);
@@ -130,13 +130,22 @@ namespace CabHireProject.Pages
             cmd.ExecuteNonQuery();
 
             string result = outPutParameter.Value.ToString();
-
+            
             if (result == "0")
             {
 
                 //SqlCommand cmd1 = new SqlCommand("select ContactNum from CabDatabase_Admin where CabNum = '"+TextBox1.Text+"'", con);
                 toHideAfteCompleatBooking.Visible = false;
-                Label2.Text = "CAB IS BOOKED SUCESSFULLY PLEASE CONTACT : ";
+
+                string CabNoSelected1 = Request.Form["RadioButton1"].ToString();
+                string CN1 = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+                SqlConnection con1 = new SqlConnection(CN1);
+                SqlCommand cmd1 = new SqlCommand("select PhoneNo from "+username+ " where CabNoBooked = '" + CabNoSelected1 + "'", con1);
+                con1.Open();
+                string num = cmd1.ExecuteScalar().ToString();
+                con1.Close();
+
+                Label2.Text = "CAB IS BOOKED SUCESSFULLY PLEASE CONTACT : "+ num;
                 con.Close();
             }
             else
