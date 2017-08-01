@@ -65,7 +65,7 @@ SET @SQLString = 'CREATE TABLE ' + @userNameTable +  '(CustmID int identity prim
 EXEC (@SQLString)
 end 
 
-execute sp_CreateUserTable1 'aman'
+execute sp_CreateUserTable1 'newuser'
 
 ALTER proc sp_ValidationEmailUsername
 @emailval varchar(50),
@@ -560,7 +560,7 @@ DECLARE @SQLSTATEMENT_TOCREATETABLE NVARCHAR(MAX)
 DECLARE @SQLSTATEMENT_TOCREATETRIGGER_DELETED NVARCHAR(MAX)
 
 SET @SQLSTATEMENT_TOCREATETABLE = '
-create table '+@cretetable_triger+'UserTgr ( UserName varchar(30), PhoneNo varchar (30), StartingLoc varchar(30), Destination varchar(50),DriverBooked varchar(20) , CabNoBooked varchar(30), Typeofcab varchar(20) , EielId varchar(10), UpdatedOn varchar(30), Status varchar(20))'
+create table '+@cretetable_triger+'UserTgr ( SerialNo int identity primary key, UserName varchar(30), PhoneNo varchar (30), StartingLoc varchar(30), Destination varchar(50),DriverBooked varchar(20) , CabNoBooked varchar(30), Typeofcab varchar(20) , EielId varchar(10), UpdatedOn varchar(30), Status varchar(20))'
 
 SET @SQLSTATEMENT_TOCREATETRIGGER_ADDED='
 
@@ -632,11 +632,8 @@ EXEC(@SQLSTATEMENT_TOCREATETRIGGER_DELETED)
 END
 
 
-execute sp_CreateUserTable_Trigger1'hiii'
+execute sp_CreateUserTable_Trigger1'newuser'
 
-
-select * from rkumar
-select * from rkumarUserTgr
 
 insert into rkumar values ('aman','kumar','rkumar','aman@gmail.com','8547965685','Sector18','Sector15','uokash','DLFD5046','EielXL','EIL-2221')
 delete from hiii where UserName ='hiii'
@@ -654,6 +651,7 @@ select*from RegistrationData
 alter proc sp_AutoCabRemovalFromUserDBtoCabDBfor30MIn1
 as
 declare @QUERY_STRING_DIASBLE_TRIGGER NVARCHAR(MAX)
+declare @QUERY_STRING_DELETEFROMTABLE NVARCHAR(MAX)
 declare @CustmID_Temp int
 declare @UserName_Temp NVARCHAR(MAX)
 declare @LoopCounter int
@@ -674,9 +672,12 @@ begin
 	alter table '+@UserName_Temp+' DISABLE TRIGGER tr_'+@UserName_Temp+'_forDelete
 	INSERT INTO CabDatabase_Admin (DriverName, CabNum, EielID, Starting,Destin,Typeofcab,EmailId,ContactNum)
 	SELECT DriverBooked , CabNoBooked, EielId,Destinatin,StartingLoc,Typeofcab,EmailId,PhoneNo
-	FROM '+@UserName_Temp+'
+	FROM '+@UserName_Temp+' WHERE EielID NOT LIKE '+CHAR(39)+'%OEIL%'+CHAR(39)+'
+	DELETE TOP (200) FROM  '+@UserName_Temp+'
 	
 	alter table '+@UserName_Temp+' ENABLE TRIGGER tr_'+@UserName_Temp+'_forDelete'
+
+	
 
 	EXEC(@QUERY_STRING_DIASBLE_TRIGGER)
 
@@ -684,20 +685,23 @@ begin
 	set @LoopCounter = @LoopCounter+1
 	end
 
+
 END
+
+select * from CabDatabase_Admin
 
 execute sp_AutoCabRemovalFromUserDBtoCabDBfor30MIn1
 
 
 ---------------------- store procedure to copy BOOKED CABS from user db to main db above--------------------
+alter table CabDatabase_Admin ENABLE TRIGGER tr_CabDatabase_Admin_forDelete
 
 
 
+select * from amnrjn
 
-select * from rkumar
-
-
-select * from CabDatabase_Admin
+select * from DriverRegistrationData
+select * from CabDatabase_Admin_AuditTable
 
 create proc sp_timecheck
 as
@@ -848,7 +852,7 @@ declare @result varchar(10)
 execute sp_Driver_CabDataRemove 'BR-5S-BLK-', @result out
 print @result
 
-SELECT * FROM CabDatabase_Admin
+SELECT * FROM CabDatabase_Admin_AuditTable
 
 SELECT * FROM RegistrationData
 
@@ -866,5 +870,19 @@ Alter table CabDatabase_Admin ALTER Column CabNum nvarchar(30)
 ALTER TABLE DriverRegistrationData
 ADD CarType varchar(10);
 
-DELETE TOP (6)
-FROM   DriverRegistrationData
+DELETE TOP (148)
+FROM   CabDatabase_Admin_AuditTable
+
+select * from CabDatabase_Admin_AuditTable
+
+select * from amnrjnUserTgr
+
+
+ALTER TABLE CabDatabase_Admin_AuditTable
+  ADD SerialNo int identity primary key ;
+
+
+  select ContactNum from CabDatabase_Admin where CabNum = 'OLDSBK1539'
+
+
+  select * from amnrjn where CabNoBooked
