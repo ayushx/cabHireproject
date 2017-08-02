@@ -127,6 +127,8 @@
     <Content Include="Images\slider1.jpg" />
     <Content Include="Images\slider2.jpg" />
     <Content Include="Images\slider3.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -141,7 +143,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Pages\AADesignRegister.aspx" />
     <Content Include="Pages\DashbordAdmin.aspx" />
     <Content Include="Pages\DashbordAdminManageCabs.aspx" />
     <Content Include="Pages\DashbordAdminViewDB.aspx" />
@@ -177,7 +178,7 @@
     <Content Include="Style\IndexPage_Slider.css" />
     <Content Include="Style\TextSlider_Index.css" />
     <Content Include="Style\Trasnparent_btn.css" />
-    <Content Include="Uber-web-ajjpp.png" />
+    <Content Include="Images\adminCarimg.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -192,15 +193,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="IsAdminOrUser.cs" />
-    <Compile Include="JobScheduler.cs" />
-    <Compile Include="Pages\AADesignRegister.aspx.cs">
-      <DependentUpon>AADesignRegister.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\AADesignRegister.aspx.designer.cs">
-      <DependentUpon>AADesignRegister.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IsAdminOrUser.cs" />
+    <Compile Include="JobScheduler.cs" />
     <Compile Include="Pages\DashbordAdmin.aspx.cs">
       <DependentUpon>DashbordAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

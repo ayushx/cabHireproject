@@ -24,7 +24,7 @@ namespace CabHireProject
                      .ForJob(emailJob)
                      .WithIdentity("trigger1")
                      .StartNow()
-                     .WithCronSchedule("0 0/38 * * * ?") // Time : Every 1 Minutes job execute
+                     .WithCronSchedule("0 0/3 * * * ?") // Time : Every 1 Minutes job execute
                      .Build();
 
                 ISchedulerFactory sf = new StdSchedulerFactory();

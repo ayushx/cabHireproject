@@ -10,6 +10,7 @@
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <link href="../Style/DashbordUser.css" rel="stylesheet" />
     <script src="../AdditionalScript/DashbordUser.js"></script>
+    <link href="../Style/footer.css" rel="stylesheet" />
     <script> //for registration form
         $(document).ready(function () {
             $('#found_site').on('change', function () {
@@ -138,6 +139,7 @@
                                             <asp:ListItem Value="-1">Your Location</asp:ListItem>
                                             <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
                                             <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                            <asp:ListItem Value="KashmereGate">KashmereGate</asp:ListItem>
                                             <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
                                             <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
                                             <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>
@@ -157,6 +159,7 @@
                                             <asp:ListItem Value="-1">Your Location</asp:ListItem>
                                             <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
                                             <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                            <asp:ListItem Value="KashmereGate">KashmereGate</asp:ListItem>
                                             <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
                                             <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
                                             <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>
@@ -178,7 +181,7 @@
                                         </div>
                                         <div class="form-group col-md-5">
                                             <label class="label_item" for="radio1" style="padding-top: 25px;">
-                                                <img src="../Uber-web-ajjpp.png" />
+                                                <img src="../Images/adminCarimg.jpg" />
                                             </label>
                                         </div>
                                     </div>
@@ -189,7 +192,7 @@
                                         </div>
                                         <div class="form-group col-md-5">
                                             <label class="label_item" for="radio1" style="padding-top: 25px;">
-                                                <img src="../Uber-web-ajjpp.png" />
+                                                <img src="../Images/adminCarimg.jpg" />
                                             </label>
                                         </div>
                                     </div>
@@ -200,7 +203,7 @@
                                         </div>
                                         <div class="form-group col-md-5">
                                             <label class="label_item" for="radio1" style="padding-top: 25px;">
-                                                <img src="../Uber-web-ajjpp.png" />
+                                                <img src="../Images/adminCarimg.jpg" />
                                             </label>
                                         </div>
                                     </div>

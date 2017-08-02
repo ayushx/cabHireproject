@@ -135,6 +135,7 @@
                                     <asp:ListItem Value="-1">Your Location</asp:ListItem>
                                     <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
                                     <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                    <asp:ListItem Value="KashmereGate">KashmereGate</asp:ListItem>
                                     <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
                                     <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
                                     <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>
@@ -154,6 +155,7 @@
                                     <asp:ListItem Value="-1">Your Location</asp:ListItem>
                                     <asp:ListItem Value="Azadpur">Azadpur</asp:ListItem>
                                     <asp:ListItem Value="RajeevChowk">RajeevChowk</asp:ListItem>
+                                    <asp:ListItem Value="KashmereGate">KashmereGate</asp:ListItem>
                                     <asp:ListItem Value="GreenPark">GreenPark</asp:ListItem>
                                     <asp:ListItem Value="Sikandarpur">Sikandarpur</asp:ListItem>
                                     <asp:ListItem Value="HuddaCityCenter">HuddaCityCenter</asp:ListItem>

@@ -10,6 +10,7 @@
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <link href="../Style/DashbordUser.css" rel="stylesheet" />
     <script src="../AdditionalScript/DashbordUser.js"></script>
+    <link href="../Style/footer.css" rel="stylesheet" />
     <style>
         /*for registration form*/
         form * {
@@ -203,12 +204,33 @@
                                 <br />
                                 <br />
                                 <hr />
-                                <legend style="color: blue; font-size=25px;">CUSTOMER DETAILS<br>
+                                
+                                <legend style="color: blue; font-size=25px;">Driver Registrations<br>
                                 </legend>
 
                                 <fieldset>
-                                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Entre customer USER ID"></asp:TextBox><br>
-                                    <asp:Button ID="Button4" runat="server" Text="CUSTOMER DETAILS" CssClass="btn btn-primary" Width="200px" OnClick="Button4_Click" />
+
+                                    <asp:Button ID="Button6" runat="server" Text="DRIVER REGISTRATIONS" CssClass="btn btn-primary" Width="200px" OnClick="Button6_Click" />
+
+                                    <legend></legend>
+                                    <br />
+                                    <hr />
+                                    <br />
+                                    <asp:GridView ID="GridView6" runat="server" CellPadding="4" ForeColor="#333333" CssClass="table table-striped table-bordered table-condensed">
+                                    </asp:GridView>
+                                    <br />
+                                    <hr />
+                                </fieldset>
+                                <br />
+                                <br />
+                                <hr />
+                                
+                                <legend style="color: blue; font-size=25px;">CUSTOMER CURRENT DETAILS<br>
+                                </legend>
+
+                                <fieldset>
+                                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Entre customer USER NAME"></asp:TextBox><br>
+                                    <asp:Button ID="Button4" runat="server" Text="CUSTOMER CURRENT DETAILS" CssClass="btn btn-primary" Width="200px" OnClick="Button4_Click" />
                                     <asp:Label ID="Label1" runat="server" Text="" ForeColor="#ff6600" Font-Size="Larger" CssClass="label"></asp:Label>
                                     <legend></legend>
                                     <br />
@@ -216,17 +238,28 @@
                                     <br />
 
                                     <asp:GridView ID="GridView4" runat="server" CellPadding="4" ForeColor="#333333" CssClass="table table-striped table-bordered table-condensed">
-                                        <%--<AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                                <EditRowStyle BackColor="#999999" />
-                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                                <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                                <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                                <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />--%>
+                                    </asp:GridView>
+
+                                    <br />
+                                    <hr />
+                                </fieldset>
+                                <br />
+                                <br />
+                                <hr />
+
+                                <legend style="color: blue; font-size=25px;">CUSTOMER TRIPS DETAILS<br>
+                                </legend>
+
+                                <fieldset>
+                                    <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" placeholder="Entre customer USER NAME"></asp:TextBox><br>
+                                    <asp:Button ID="Button7" runat="server" Text="CUSTOMER TRIPS DETAILS" CssClass="btn btn-primary" Width="200px" OnClick="Button7_Click" />
+                                    <asp:Label ID="Label3" runat="server" Text="" ForeColor="#ff6600" Font-Size="Larger" CssClass="label"></asp:Label>
+                                    <legend></legend>
+                                    <br />
+                                    <hr />
+                                    <br />
+
+                                    <asp:GridView ID="GridView7" runat="server" CellPadding="4" ForeColor="#333333" CssClass="table table-striped table-bordered table-condensed">
                                     </asp:GridView>
 
                                     <br />
@@ -266,6 +299,10 @@
                                 </fieldset>
                             </div>
                         </div>
+                        </div>
+                    </div>
+
+
                         <div style="object-fit: cover; padding-top: 40px;">
                             <footer class="container-fluid text-center foot">
 
